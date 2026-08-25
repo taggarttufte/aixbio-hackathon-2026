@@ -1,0 +1,38 @@
+# Secrets — never commit
+.hf_token
+.env
+*.token
+
+# Data — large; users re-download via documented commands
+data/raw/
+data/processed/
+
+# Python venv + cache
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+
+# Generated exploration outputs (paper/figs/ IS committed)
+notebooks/fig/
+*.log
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# LaTeX build artifacts
+*.aux
+*.out
+*.toc
+*.lof
+*.lot
+
+# Refs folder if pdfs of papers are downloaded locally
+refs/*.pdf
+
+# Personal working notes (not part of research artifact)
+outreach.md

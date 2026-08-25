@@ -1,0 +1,38 @@
+% Suppress orphans/widows: don't leave 1 line of a paragraph at the top/bottom of a page.
+\widowpenalty=10000
+\clubpenalty=10000
+
+% Float package — keeps figures and their captions together on the same page.
+\usepackage{float}
+\floatplacement{figure}{H}
+\floatplacement{table}{H}
+
+% Tighter caption typography
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf,skip=4pt}
+
+% Map literal Unicode math/script characters used in prose to LaTeX equivalents,
+% since the default Latin Modern text fonts lack these glyphs.
+\usepackage{newunicodechar}
+\newunicodechar{σ}{\ensuremath{\sigma}}
+\newunicodechar{μ}{\ensuremath{\mu}}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{≈}{\ensuremath{\approx}}
+\newunicodechar{⁺}{\textsuperscript{+}}
+\newunicodechar{₀}{\textsubscript{0}}
+\newunicodechar{₁}{\textsubscript{1}}
+
+% Title-page formatting: separate page after the title block
+\usepackage{titling}
+\renewcommand{\maketitlehookd}{\thispagestyle{empty}\newpage}
+
+% Force the table of contents onto its own page, and reset page counter
+% (so body of paper starts at page 1, after title and TOC).
+\let\oldtableofcontents\tableofcontents
+\renewcommand{\tableofcontents}{%
+  \pagenumbering{roman}%
+  \oldtableofcontents%
+  \clearpage%
+  \pagenumbering{arabic}\setcounter{page}{1}%
+}

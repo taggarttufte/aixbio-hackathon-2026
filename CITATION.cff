@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "Attention-decay in pandemic surveillance is an emerging-disease phenomenon"
+message: "If you reference this work, please cite it as below."
+type: software
+authors:
+  - family-names: Tufte
+    given-names: Taggart
+    affiliation: "Department of Mathematical Sciences, Montana State University"
+    email: taggarttufte@gmail.com
+date-released: 2026-04-26
+license: MIT
+abstract: >-
+  A multi-signal evaluation of wastewater, search-query, information-seeking,
+  and outpatient-syndromic surveillance signals across COVID-19 (2021-2024)
+  and influenza (2021-2025). Finds that attention-based surveillance signals
+  (Google Trends, Wikipedia) show 5-23x variance compression after the first
+  major COVID-19 wave but show no compression across flu seasons, localizing
+  the failure mode to the emerging-disease novelty cycle. Wastewater is the
+  only signal type with stable variance across both diseases. Includes a
+  negative result on LLM-prompt surveillance with WildChat-4.8M.
+keywords:
+  - pandemic surveillance
+  - wastewater epidemiology
+  - anomaly detection
+  - early warning
+  - multi-signal fusion
+  - attention decay
+  - COVID-19
+  - influenza

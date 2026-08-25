@@ -1,0 +1,32 @@
+# Core scientific Python
+numpy>=2.4
+pandas>=3.0
+scipy>=1.17
+scikit-learn>=1.8
+matplotlib>=3.10
+seaborn>=0.13
+statsmodels>=0.14
+pyarrow>=24.0
+
+# Anomaly detection toolkit (optional; we use scikit-learn equivalents primarily)
+pyod>=3.2
+ruptures>=1.1
+
+# Data pulls
+requests>=2.33
+pytrends>=4.9
+
+# HuggingFace + transformers (for WildChat pilot)
+datasets>=4.8
+huggingface_hub>=1.12
+transformers>=5.0
+accelerate>=1.13
+sentencepiece>=0.2
+protobuf>=7.0
+
+# torch — install separately with the right CUDA wheel:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+# CPU-only also works but the WildChat classifier will be ~10× slower.
+
+# Notebook environment (optional)
+jupyter>=1.1
